@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.notifications_active_outlined),
-          selectedIcon: const Icon(Icons.notifications_active, color: AppTheme.primaryColor),
-          label: 'Signals',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.bar_chart_outlined),
-          selectedIcon: const Icon(Icons.bar_chart, color: AppTheme.primaryColor),
-          label: 'Market',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.star_outline),
-          selectedIcon: const Icon(Icons.star, color: AppTheme.primaryColor),
-          label: 'Watchlist',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.tune_outlined),
-          selectedIcon: const Icon(Icons.tune, color: AppTheme.primaryColor),
-          label: 'Settings',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.dashboard_outlined),
+            selectedIcon: const Icon(Icons.dashboard, color: AppTheme.primaryColor),
+            label: 'Signals',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.list_alt_outlined),
+            selectedIcon: const Icon(Icons.list_alt, color: AppTheme.primaryColor),
+            label: 'Watchlist',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.analytics_outlined),
+            selectedIcon: const Icon(Icons.analytics, color: AppTheme.primaryColor),
+            label: 'Alerts',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.settings_outlined),
+            selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
+            label: 'Metrics',
+          ),
         ],
       ),
     );
